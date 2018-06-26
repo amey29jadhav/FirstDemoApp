@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/cartcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <ImageView
+            android:id="@+id/productimageview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/closetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/close"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/productdesc"
+            android:layout_toRightOf="@+id/productimageview"
+            android:layout_toLeftOf="@+id/closetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lines="2"/>
+
+        <TextView
+            android:id="@+id/pricetextview"
+            android:layout_below="@+id/productdesc"
+            android:layout_toRightOf="@+id/productimageview"
+            android:layout_toLeftOf="@+id/closetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#8B8B8B"
+            android:ellipsize="end"
+            android:lines="2"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/pricetextview"
+            android:layout_toRightOf="@+id/productimageview"
+            android:layout_toLeftOf="@+id/closetextview"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/quantitytextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Qty :"/>
+
+            <TextView
+                android:id="@+id/decrementtextview"
+                android:layout_toRightOf="@+id/quantitytextview"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/decrement"
+                android:textSize="19sp"/>
+
+
+
+            <TextView
+                android:id="@+id/numbertextview"
+                android:layout_toRightOf="@+id/decrementtextview"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/incrementtextview"
+                android:layout_toRightOf="@+id/numbertextview"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/increment"
+                android:textSize="19sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

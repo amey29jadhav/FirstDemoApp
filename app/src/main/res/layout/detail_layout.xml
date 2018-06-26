@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imagecontainer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="300dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:id="@+id/imageView"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/descsharecontainer"
+            android:layout_below="@+id/imagecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+
+
+            <TextView
+                android:id="@+id/sharetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/share"
+                android:gravity="center_vertical"
+                android:textColor="#999799"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/desctextview"
+                android:layout_toLeftOf="@+id/sharetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#999799"
+                android:text="Craftsvilla Blue color cotton saree with Traditional Zari Border Work and Unstitched Blouse Material"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descsharecontainer"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:layout_marginLeft="15dp"
+            android:progressTint="#FFB700"
+            android:layout_marginBottom="10dp"
+            android:rating="5"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/pricecontainer"
+            android:layout_below="@+id/ratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp">
+            <TextView
+                android:id="@+id/discountedpricetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/actualpricetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/discountedpricetextview"
+                android:text="₹ 2,559"
+                android:textSize="13sp"
+                android:textColor="#999799"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/savetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/actualpricetextview"
+                android:text="save 53%"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="true"
+                android:textColor="#ABD788"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="+info"
+                android:textAllCaps="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_below="@+id/discountedpricetextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Inclusive of GST"
+                android:textSize="8sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cartcontainer"
+            android:layout_below="@+id/pricecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:id="@+id/offerheadercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF0D4"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:id="@+id/offerheadertextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offer"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#574B39"></TextView>
+                <TextView
+                    android:id="@+id/crosstextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|center"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="17sp"
+                    android:textColor="#574B39"
+                    android:text="@string/close"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@+id/offerheadercontainer"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:background="#FCFAFC"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/cartbutton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textColor="@android:color/black"
+                    android:background="#6B6B6B"
+                    />
+                <Button
+                    android:id="@+id/buybutton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="#DB003F"
+                    android:text="Buy Now"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

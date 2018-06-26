@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Craftsvilla</string>
+    <string name="dots">&#xf111;</string>
+    <string name="arrow">&#xf105;</string>
+    <string name="offer">Extra Rs.75 OFF on all pre-paid orders.</string>
+    <string name="close">&#xf00d;</string>
+    <string name="share">&#xf1e0;</string>
+    <string name="proceed_text">Proceed to Checkout</string>
+    <string name="increment">&#xf055;</string>
+    <string name="decrement">&#xf056;</string>
+    <string name="inr">₹ </string>
+    <string name="back">&#xf060;</string>
+</resources>
