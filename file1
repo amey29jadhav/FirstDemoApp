@@ -1,0 +1,7 @@
+Filesystem      Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1   113Gi   42Gi   68Gi    38%  723516 9223372036854052291    0%   /
+devfs          185Ki  185Ki    0Bi   100%     642                   0  100%   /dev
+/dev/disk1s4   113Gi  2.0Gi   68Gi     3%       2 9223372036854775805    0%   /private/var/vm
+map -hosts       0Bi    0Bi    0Bi   100%       0                   0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0                   0  100%   /home
+/dev/disk1s3   113Gi  486Mi   68Gi     1%      12 9223372036854775795    0%   /Volumes/Recovery
