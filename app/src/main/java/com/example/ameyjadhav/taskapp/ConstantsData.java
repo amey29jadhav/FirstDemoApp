@@ -19,6 +19,7 @@ public class ConstantsData {
     public static final String DECREMENTBROADCAST = "decrement";
     public static final String REMOVEBROADCAST = "remove";
     public static int CartSubTotal;
+    private static String test;
 
 
     public static ArrayList<ProductModel> getProductList() {
