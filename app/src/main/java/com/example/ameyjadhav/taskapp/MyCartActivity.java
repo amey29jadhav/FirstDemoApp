@@ -160,9 +160,9 @@ public class MyCartActivity extends AppCompatActivity {
                     ProductModel model = (ProductModel)holder.incrementtextview.getTag();
                     int quantity = model.quantity;
 
-                    if (quantity == 1)
+                   /* if (quantity == 1)
                         return;
-
+*/
                     quantity++;
                     model.quantity = quantity;
 
@@ -205,8 +205,8 @@ public class MyCartActivity extends AppCompatActivity {
                     ProductModel model = (ProductModel)holder.decrementtextview.getTag();
                     int quantity = model.quantity;
 
-                    if (quantity == 1)
-                            return;
+                  /*  if (quantity == 1)
+                            return;*/
 
                     quantity--;
                     model.quantity = quantity;
